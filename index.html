@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Local Weather app</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
+<script src="jquery-3.2.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-sm-8">
+        <div class="row first">
+          <div class="col-sm-6" >
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="lokalizacja text" id="lokalizacja">Local Weather</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="temperatura text"> </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 buttonCenter">
+                    <button type="button"class="btn btn-primary btn-lg celsious" onclick="toggle()" id="button" >Change C/F</button>
+                </div>
+            </div> 
+          </div>
+          <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12"><p class="kindOf text"></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 img" ><img class="img rounded" src="pic/thermometer.png"></div>
+              </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm zegar"><span class="wyswietlacz" id="godzina">12</span><span class="wyswietlacz kropka"> : </span><span class="wyswietlacz" id="minuta">00</span></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text "><p class="footer">Created by<a href="#"> Piotr Mol</a></p></div>  
+    </div>
+
+    <script src="script.js"></script>
+ 
+  </div>
+</body>
+
+</html>

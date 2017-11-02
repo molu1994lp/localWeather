@@ -1,0 +1,98 @@
+/*####### Deafults #########*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  size: 10px
+}
+body{
+    height: 100vh;
+    background-color: #e2faf8;
+    background: linear-gradient(to left, #e2faf8,#04edf9);
+}
+.first{
+    margin-top: 25%;
+}
+
+/*##### watch #####*/
+.zegar{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', serif;
+  text-align: right;
+  margin-top: 5%;
+  margin-right: 2%;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 1px 0 rgba(0,0,0,.2);
+}
+
+.kropka{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', serif;
+  border-left: 0px;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 1px 0 rgba(0,0,0,.2);
+}
+/*##### Styles #####*/
+.text{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-shadow: 2px 1px 0 rgba(0,0,0,.2);
+    padding: 10px 0;
+    
+}
+
+.lokalizacja, .temperatura{
+  text-align: center;
+}
+.kindOf{
+    text-align: left;
+}
+.img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*##### Button #####*/
+button.btn{
+    display: none;
+}
+.celsious, .farenheit{
+   margin-left: auto !important;
+   margin-right: auto !important; 
+}
+
+.przycisk{
+  text-align: right;
+}
+
+.footer{
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 4%;
+   
+}
+
+
+@media(max-width: 576px ){
+    /*
+    dodać klasy rounded mx-auto d-block do img
+    wyśrodkować kindOf img oraz button
+    */
+    .kindOf{
+        text-align: center;
+    }
+    .zegar, .kropka, .wyswietlacz{
+        display: none;
+    }
+    .img{
+        text-align: center;
+        padding: 0 auto;
+    }
+}
